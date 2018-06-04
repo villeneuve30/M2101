@@ -1,7 +1,5 @@
 #include <stdio.h>
 char *my_strcat(char *dest, const char *src){
-	int i =0;
-	int j =0;
 	char *p=dest;
 	while(*dest !='\0'){
 		++dest;
