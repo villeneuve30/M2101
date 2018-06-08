@@ -1,7 +1,5 @@
-public class Fonction{
-	
-	public Fonction(){
-	}
+public class stack_overflow{
+	public stack_overflow(){}
 	
 	public int f(int n){
 		if(n<=0){
@@ -10,11 +8,15 @@ public class Fonction{
 		
 		if(n>=1){
 			return 1+f(n-1);
-		} 
+		}else{
+			return 0;
+		}
+	}
+
+	public void main(){
+		stack_overflow fct= new stack_overflow();
+		fct.f(1000);
 	}	
 }
 
-public static void main(){
-	Fonction fct= new Fonction();
-	fct.f(1000);
-}
+
